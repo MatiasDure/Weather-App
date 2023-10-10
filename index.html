@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="./bundle.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="location-info-container">
+            <p id="weather-condition" class="weather-condition">Overcast Clouds</p>
+            <p id="city" class="city">Enschede</p>
+            <div class="date">
+                <p id="city-date" class="city-date">Monday, 9th oct '23</p>
+                <p id="city-time" class="city-time">2:36 pm</p>
+            </div>
+            <p id="weather-temp" class="weather-temp">18 °C</p>
+            <button type="button" class="toggle-system" id="toggle-system">Display °F</button>
+            <div class="weather-icon">
+                <!-- <i class="fa-solid fa-cloud fa-4x" id="weather-condition-icon"></i> -->
+                <img src="#" alt="weather icon" id="weather-condition-icon">
+            </div>
+            <form action="">
+                <div class="search-container">
+                    <input type="text" name="location-query" id="location-query" placeholder="Search Location...">
+                    <button type="button" class="search-btn" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="weather-info-container">
+            <div class="info-container">
+                <div class="info-icon">
+                    <i class="fa-solid fa-temperature-low"></i>
+                </div>
+                <div class="info">
+                    <p class="info-label">Feels like</p>
+                    <p class="info-data" id="feels-like">-1000 C</p>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="info">
+                    <p class="info-label">Humidity</p>
+                    <p class="info-data" id="humidity">84%</p>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-icon">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+                <div class="info">
+                    <p class="info-label">Chance of Rain</p>
+                    <p class="info-data" id="chance-rain">35%</p>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-icon">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="info">
+                    <p class="info-label">Wind Speed</p>
+                    <p class="info-data" id="wind-speed">12 km/h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
